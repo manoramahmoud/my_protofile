@@ -1,0 +1,41 @@
+@import'_config';
+@import'_global';
+@import'_home';
+@import'_menu';
+@import'_about';
+@import'_projects';
+@import'_contact';
+header {
+    position: fixed;
+    z-index: 2;
+    padding: 1rem;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+
+    .social-icons {
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
+
+        a {
+            padding: 0.4rem;
+            @include transion-all;
+
+            &:hover {
+                color: $secondry-color;
+            }
+        }
+    }
+}
+footer{
+    padding: 1rem;
+    position: fixed;
+    bottom: 0.4rem;
+    right: 1rem;
+    text-align: right;
+    color: #fff;
+}
